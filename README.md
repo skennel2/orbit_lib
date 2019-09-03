@@ -31,6 +31,39 @@ var WebpackBeforeBuildPlugin = require('before-build-webpack');
 
 ```
 
+(webpack-merge)[https://www.npmjs.com/package/webpack-merge]
+
+웹팩 설정파일 분리하기위한 용도
+
+```javascript 
+
+// Customizing array/object behavior
+var output = merge(
+  {
+    customizeArray(a, b, key) {
+      if (key === 'extensions') {
+        return _.uniq([...a, ...b]);
+      }
+ 
+      // Fall back to default merging
+      return undefined;
+    },
+    customizeObject(a, b, key) {
+      if (key === 'module') {
+        // Custom merging
+        return _.merge({}, a, b);
+      }
+ 
+      // Fall back to default merging
+      return undefined;
+    }
+  }
+)(object1, object2, object3, ...);
+
+```
+
+
+
 ### 참고한 문서
 
 React, webpack, Babel 세팅

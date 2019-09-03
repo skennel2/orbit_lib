@@ -15,7 +15,7 @@ module.exports = merge(common, {
     devtool: 'inline-source-map',
     devServer: {
       port: 9000, // 개발서버 시작포트
-      hot: true, // Enable webpack's Hot Module Replacement
+      hot: true, // Enable webpack's Hot Module Replacement; webpack-dev-server를 이용하면 이 설정과 무관하게 돌아가는듯함
       inline: true,
       host: 'localhost',
       historyApiFallback: true,
