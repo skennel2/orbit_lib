@@ -2,6 +2,7 @@
 
 # dev dist
 dev_dist
+dist
 
 # dependencies
 node_modules
