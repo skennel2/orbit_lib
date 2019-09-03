@@ -5,10 +5,11 @@ const path = require('path');
 
 module.exports = merge(common, {
     mode: 'development',
-    entry: './src/test.js',
+    entry: './src/test_client_root.js',
     output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dev_dist'),
+      publicPath: '/'
     },
     // 소스맵은 원본 소스와 난독화된 소스를 매핑해주는 방법
     devtool: 'inline-source-map',
@@ -17,6 +18,7 @@ module.exports = merge(common, {
       hot: true, // Enable webpack's Hot Module Replacement
       inline: true,
       host: 'localhost',
+      historyApiFallback: true,
       before : function(app, server){
         console.log(app)
         console.log(server)
