@@ -10,6 +10,27 @@ npm run build로 빌드된 production의 목적의 파일이 생성되는 경로
 
 관련 설정은 webpack.prod.js를 참조하세요.
 
+### 사용한 npm packpage
+
+[before-build-webpack](https://www.npmjs.com/package/before-build-webpack)
+
+빌드전에 특정 콜백을 실행
+
+```javascript
+var WebpackBeforeBuildPlugin = require('before-build-webpack');
+// ...
+  module: {
+    plugins: [
+      new WebpackBeforeBuildPlugin(function(stats, callback) {
+        // Do whatever you want...
+        callback(); // don't call it if you do want to stop compilation
+      }),
+    ]
+  },
+// ...
+
+```
+
 ### 참고한 문서
 
 React, webpack, Babel 세팅
