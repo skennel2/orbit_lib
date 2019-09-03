@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = merge(common, {
     mode: 'development',
-    entry: './src/test_client_root.js',
+    entry: './src/testClientRoot.js',
     output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dev_dist'),
