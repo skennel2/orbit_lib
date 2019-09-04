@@ -1,23 +1,52 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link, Switch, withRouter } from "react-router-dom";
 import { TestComponentTest } from './example';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
+// 샘플 페이지가 추가되면 아래에 { pageName : '', pageComponent: object } 형태로
+// 추가해주세요.
+const testPageInfomationList = [
+    {
+        pageName: 'TestComponentTest',
+        pageComponent: TestComponentTest
+    }
+];
 
 class TestClient extends React.Component { 
-    render(){
+    state = { 
+        selectedItem: ''
+    }
+
+    handleOnClickList(){
+    }
+
+    render() {
         return(
             <div>
+                <br/>
                 <Router>
-                    <div className='container-fluid'>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <Link to="/TestComponentTest">TestComponentTest</Link>
-                                </li>
+                    <div className='container-fluid row'>
+                        <div className='col-md-2'>
+                            <ul className="list-group" onClick={this.handleOnClickList.bind(this)}>
+                                {
+                                    this.props.pageInfoList.map(
+                                        (page, index) => (
+                                            <li key={index} className="list-group-item">
+                                                <Link to={page.pageName}>{page.pageName}</Link>
+                                            </li>
+                                        )
+                                    )
+                                }
                             </ul>
-                        </nav>                     
-                        <Switch>                       
-                            <Route exact path="/TestComponentTest" component={TestComponentTest} />
+                        </div>                     
+                        <Switch className='col-md-10'>                
+                            {
+                                this.props.pageInfoList.map(
+                                    (page, index) => (
+                                        <Route key={index}  exact path={'/' + page.pageName} component={page.pageComponent} />
+                                    )
+                                )
+                            }
                         </Switch>
                     </div>
                 </Router>
@@ -26,4 +55,4 @@ class TestClient extends React.Component {
     }
 }
 
-ReactDOM.render(<TestClient />, document.getElementById('app'));
+ReactDOM.render(<TestClient pageInfoList={testPageInfomationList}/>, document.getElementById('app'));
