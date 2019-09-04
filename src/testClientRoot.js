@@ -8,7 +8,7 @@ class TestClient extends React.Component {
         return(
             <div>
                 <Router>
-                    <div className='container'>
+                    <div className='container-fluid'>
                         <nav>
                             <ul>
                                 <li>

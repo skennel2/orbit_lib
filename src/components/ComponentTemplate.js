@@ -7,7 +7,7 @@ export class ComponentTemplate extends React.Component {
         /**
          * 코드도움 다이얼로그의 열림 여부
          */
-        isCodeHelpOpen : false,
+        //isCodeHelpOpen : false,
     }
 
     constructor(props) {
