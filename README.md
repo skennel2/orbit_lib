@@ -1,3 +1,11 @@
+## 작업가이드
+
+1. 개발할 컴포넌트 소스가 위치할 디렉토리를 'src/components/컴포넌트명/' 경로에 생성하고 개발을 시작한다.
+2. 개발한 컴포넌트의 루트를 'src/components/index.js 파일에 노출시킨다.
+3. 테스트를 위해 'src/example/컴포넌트명 + Test' 디렉토리를 생성하고 테스트 페이지를 개발한다.
+4. 개발한 테스트 페이지를 'src/testClientRoot.js' 파일 상단의 testPageInfomationList 배열에 추가한다. 
+5. npm start
+
 ### dev_dist
 
 npm start로 개발서버를 실행했을때 빌드되는 파일이 생성되는 경로입니다.
