@@ -39,7 +39,7 @@ var WebpackBeforeBuildPlugin = require('before-build-webpack');
 
 ```
 
-(webpack-merge)[https://www.npmjs.com/package/webpack-merge]
+[webpack-merge](https://www.npmjs.com/package/webpack-merge)
 
 웹팩 설정파일 분리하기위한 용도
 
@@ -86,3 +86,6 @@ IE8 지원 관련
 
 [bable-polyfill](https://programmingsummaries.tistory.com/401)
 
+bable-polyfill은 dependency와 devDependency중 어디에 위치해야할까
+
+[stackoverflow](https://stackoverflow.com/questions/40143357/do-you-put-babel-and-webpack-in-devdependencies-or-dependencies)
