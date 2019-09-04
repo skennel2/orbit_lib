@@ -66,7 +66,7 @@ module.exports = {
   },
   resolve: {
     // 여기에 지정한 확장자는 소스코드에서 임포트시 파일명의 확장자를 생략할 수 있다.
-    extensions: [ '.tsx', '.ts', '.js', 'jsx' ]
+    extensions: [ '.jsx', '.js', '.tsx', '.ts']
   },
   plugins: [
     // 웹팩4 기반 CSS를 별도의 파일로 추출한다.
