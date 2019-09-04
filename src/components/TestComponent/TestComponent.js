@@ -12,7 +12,7 @@ export default class TestComponent extends Component {
     }
 
     handleKeyDown = (index, event) => {
-        let {refs} = this.state;
+        let { refs } = this.state;
 
         switch (keycode(event)) {
             case 'right':
