@@ -12,7 +12,7 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, 'dist'),
         library: 'Orbit',
         libraryTarget: 'umd',
-        libraryExport: ['TestComponent']
+        //libraryExport: ['TestComponent']
     },
     performance: {
         hints: 'warning', // 'error' or false are valid too
