@@ -10,8 +10,9 @@ module.exports = merge(common, {
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
-        library: 'TestComponent',
-        libraryTarget: 'umd'
+        library: 'Orbit',
+        libraryTarget: 'umd',
+        libraryExport: ['TestComponent']
     },
     performance: {
         hints: 'warning', // 'error' or false are valid too
@@ -22,7 +23,8 @@ module.exports = merge(common, {
     externals: {
         react: 'react',
         reactDOM: 'react-dom',
-        propTypes: 'prop-types'
+        propTypes: 'prop-types',
+        lunaRocket: 'luna-rocket'
     },
     // 브라우저에서 참조 될 때 출력 디렉토리의 공용 URL을 지정
     // publicPath : ''
