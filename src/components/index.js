@@ -1,3 +1,3 @@
 import TestComponent from "./TestComponent/TestComponent";
-
-export { TestComponent };
+import Label from "./Label/Label";
+export { TestComponent, Label };
