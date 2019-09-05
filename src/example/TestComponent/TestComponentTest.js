@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TestComponent } from '../../components';
+import { TestComponent } from "../../components";
 //import TestComponent from '../../components/TestComponent/TestComponent'
 
 export default class TestComponentTest extends Component {
