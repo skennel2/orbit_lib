@@ -6,9 +6,13 @@ module.exports = merge(common, {
     mode: 'production',
     // 이 소스맵은 디버깅이 불가능하다.
     //devtool: 'cheap-module-source-map',
-    entry: './src/components/index.js',
+    entry: {
+        //'./src/components/index.js'
+        label: './src/components/Label/Label.js',
+        test_component: './src/components/TestComponent/TestComponent.js',
+    },
     output: {
-        filename: 'index.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
         library: 'Orbit',
         libraryTarget: 'umd',
