@@ -4,7 +4,7 @@ export default class Label extends Component {
     render() {
         return (
             <div>
-                Hello
+                {this.props.text}
             </div>
         )
     }
