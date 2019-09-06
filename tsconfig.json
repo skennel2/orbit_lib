@@ -25,7 +25,8 @@
     },
     "allowSyntheticDefaultImports": true,
     "keyofStringsOnly": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "resolveJsonModule": true
   },
   "include": [
     "./src/**/*"
