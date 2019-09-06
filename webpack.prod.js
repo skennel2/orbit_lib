@@ -15,8 +15,7 @@ module.exports = merge(common, {
     entry: {
         index: './src/components',
         Label: './src/components/Label/Label',
-        TestComponent: './src/components/TestComponent/TestComponent',
-        TestComponent2: './src/components/TestComponent2/TestComponent2',
+        TestComponent: './src/components/TestComponent/TestComponent'
     },
     output: {
         filename: '[name].js',
@@ -35,7 +34,7 @@ module.exports = merge(common, {
         react: 'react',
         reactDOM: 'react-dom',
         propTypes: 'prop-types',
-        lunaRocket: 'luna-rocket',
+        'luna-rocket': 'luna-rocket',
         keycode: 'keycode'
     },
     // optimization: {
