@@ -38,12 +38,12 @@ module.exports = merge(common, {
         lunaRocket: 'luna-rocket',
         keycode: 'keycode'
     },
-    optimization: {
-        splitChunks: {
-            chunks: 'all',  
-        }
-        //runtimeChunk: 'single'
-    }
+    // optimization: {
+    //     splitChunks: {
+    //         chunks: 'all',  
+    //     }
+    //     //runtimeChunk: 'single'
+    // }
     // 브라우저에서 참조 될 때 출력 디렉토리의 공용 URL을 지정
     // publicPath : ''
 });
