@@ -13,6 +13,7 @@ module.exports = merge(common, {
      */
     //entry: './src/components/index.js',
     entry: {
+        index: './src/components',
         Label: './src/components/Label/Label',
         TestComponent: './src/components/TestComponent/TestComponent',
         TestComponent2: './src/components/TestComponent2/TestComponent2',
@@ -39,8 +40,9 @@ module.exports = merge(common, {
     },
     optimization: {
         splitChunks: {
-            chunks: 'all'
+            chunks: 'all',  
         }
+        //runtimeChunk: 'single'
     }
     // 브라우저에서 참조 될 때 출력 디렉토리의 공용 URL을 지정
     // publicPath : ''
