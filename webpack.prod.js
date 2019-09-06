@@ -6,11 +6,16 @@ module.exports = merge(common, {
     mode: 'production',
     // 이 소스맵은 디버깅이 불가능하다.
     //devtool: 'cheap-module-source-map',
-    entry: {
-        //'./src/components/index.js'
-        label: './src/components/Label/Label.js',
-        test_component: './src/components/TestComponent/TestComponent.js',
-    },
+    /**
+     * TODO: 컴포넌트별 코드스플리팅을 위해 엔트리 포인트를 컴포넌트 별로 두었을때와 import()를 사용했을때의 빌드결과가 다르다? 
+     * import를 사용하면 vender가 특별한 설정없이도 따로 번들로 분리된다.
+     */
+    entry: './src/components/index.js',
+    // entry: {
+    //     Label: './src/components/Label/Label',
+    //     TestComponent: './src/components/TestComponent/TestComponent',
+    //     TestComponent2: './src/components/TestComponent2/TestComponent2',
+    // },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
@@ -28,7 +33,8 @@ module.exports = merge(common, {
         react: 'react',
         reactDOM: 'react-dom',
         propTypes: 'prop-types',
-        lunaRocket: 'luna-rocket'
+        lunaRocket: 'luna-rocket',
+        keycode: 'keycode'
     },
     // 브라우저에서 참조 될 때 출력 디렉토리의 공용 URL을 지정
     // publicPath : ''
