@@ -3,6 +3,9 @@
 # dev dist
 dev_dist
 
+# vscode
+/.vscode
+
 # dependencies
 node_modules
 /.pnp
