@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LUXButton from 'luna-rocket/LUXButton'
+import { LUXButton } from 'luna-rocket'
 import keycode from 'keycode'
 
 export default class TestComponent extends Component {

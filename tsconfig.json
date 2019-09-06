@@ -5,7 +5,7 @@
     // resolve modules as you would expect
     "moduleResolution": "node",
     // leave imports as they are
-    "module": "commonjs",
+    "module": "esnext",
     // do not transpile stuff like classes, async/await, ...
     "target": "es5",
     "lib": [

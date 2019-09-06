@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LUXButton from 'luna-rocket/LUXButton'
+import { LUXButton } from 'luna-rocket'
 
 export default class TestComponent2 extends Component {
     componentDidMount() {

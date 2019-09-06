@@ -7,7 +7,7 @@ module.exports = merge(common, {
     mode: 'development',
     entry: './src/testClientRoot.js',
     output: {
-      filename: 'bundle.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dev_dist'),
       publicPath: '/'
     },
