@@ -34,7 +34,7 @@ module.exports = {
         use: [
          /* devMode ? 'style-loader' : */
          MiniCssExtractPlugin.loader,
-         'css-loader',
+         'css-loader?modules',
          'sass-loader',
         ],
       },
