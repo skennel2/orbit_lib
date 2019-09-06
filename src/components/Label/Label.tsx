@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Label extends Component {
+interface Props {
+    text: string,
+}
+
+export default class Label extends Component<Props> {
     render() {
         return (
             <div>

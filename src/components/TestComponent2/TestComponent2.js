@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import LUXButton from 'luna-rocket/LUXButton'
-import keycode from 'keycode'
 
 export default class TestComponent2 extends Component {
     componentDidMount() {
@@ -12,20 +11,6 @@ export default class TestComponent2 extends Component {
     }
 
     handleKeyDown = (index, event) => {
-        let { refs } = this.state;
-
-        switch (keycode(event)) {
-            case 'right':
-                refs[(index + 1) % refs.length].focus();
-                break;
-            case 'left':
-                if (index === 0) {
-                    refs[refs.length - 1].focus();
-                    break;
-                }
-                refs[index - 1].focus();
-                break;
-        }
     }
 
     handleTouchTap = () => {

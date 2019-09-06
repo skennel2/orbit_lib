@@ -55,6 +55,7 @@
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
-    "luna-rocket": "*"
+    "luna-rocket": "*",
+    "keycode": "*"
   }
 }

@@ -1,0 +1,13 @@
+@mixin required {
+    background-color: #fef4f4;
+}
+
+@mixin disabled {
+    color: #a6a6a6;
+    background-color: #f2f2f2;
+}
+
+@mixin readonly {
+    color: #a6a6a6;
+    background-color: #f2f2f2;
+}

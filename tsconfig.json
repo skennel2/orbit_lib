@@ -24,7 +24,8 @@
       "utils/*": ["./src/utils/*"]
     },
     "allowSyntheticDefaultImports": true,
-    "keyofStringsOnly": true
+    "keyofStringsOnly": true,
+    "strictNullChecks": false
   },
   "include": [
     "./src/**/*"
