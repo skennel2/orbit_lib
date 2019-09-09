@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Switch, withRouter } from "react-router-dom";
-import { TestComponentTest } from './example';
-import LabelTest  from './example/Label/LabelTest';
+import { TestComponentTest, LabelTest } from './example';
 
 // 샘플 페이지가 추가되면 아래에 { pageName : '', pageComponent: object } 형태로
 // 추가해주세요.
