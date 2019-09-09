@@ -17,10 +17,6 @@ module.exports = {
         }
       },
       {
-        test: /\.(ts|tsx)$/,
-        use: 'raw-loader',
-      },
-      {
         test: /\.txt$/i,
         use: 'raw-loader',
       },
