@@ -17,18 +17,19 @@ module.exports = {
         }
       },
       {
+        test: /\.(ts|tsx)$/,
+        use: 'raw-loader',
+      },
+      {
+        test: /\.txt$/i,
+        use: 'raw-loader',
+      },
+      {
         test: /\.html$/,
         use: [{
           loader: "html-loader"
         }]
       },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader'
-      //   ]
-      // },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
