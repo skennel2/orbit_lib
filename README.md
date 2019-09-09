@@ -4,6 +4,7 @@
 2. 개발한 컴포넌트의 루트를 'src/components/index.js 파일에 노출시킨다.
 3. 테스트를 위해 'src/example/컴포넌트명 + Test' 디렉토리를 생성하고 테스트 페이지를 개발한다.
 4. 개발한 테스트 페이지를 'src/testClientRoot.js' 파일 상단의 testPageInfomationList 배열에 추가한다. 
+6. 개발후 컴포넌트의 배포를 원하면 webpack.prod.js의 entry부분에 컴포넌트를 추가한다.
 5. npm start
 
 ### dev_dist
