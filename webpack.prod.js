@@ -18,7 +18,9 @@ module.exports = merge(common, {
         TestComponent: './src/components/TestComponent/TestComponent'
     },
     output: {
-        filename: '[name].js',
+        //filename: '[name].js',
+        chunkFilename: '[chunkhash].js',
+        filename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, 'dist'),
         library: 'Orbit',
         libraryTarget: 'umd',

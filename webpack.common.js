@@ -27,13 +27,22 @@ module.exports = {
         }]
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /^(?!.*?\.module).*\.(sa|sc|c)ss$/,
         use: [
-         /* devMode ? 'style-loader' : */
-         MiniCssExtractPlugin.loader,
-         'css-loader?modules',
-         'sass-loader',
+            /* devMode ? 'style-loader' : */
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader',
         ],
+      },
+      {
+          test: /\.module\.(sa|sc|c)ss$/,
+          use: [
+              /* devMode ? 'style-loader' : */
+              MiniCssExtractPlugin.loader,
+              'css-loader?modules',
+              'sass-loader',
+          ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,

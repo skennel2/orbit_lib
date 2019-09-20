@@ -90,3 +90,7 @@ IE8 지원 관련
 bable-polyfill은 dependency와 devDependency중 어디에 위치해야할까
 
 [stackoverflow](https://stackoverflow.com/questions/40143357/do-you-put-babel-and-webpack-in-devdependencies-or-dependencies)
+
+리액트 타입스크립트 웹팩 바벨
+
+[How to Set Up a React TypeScript Project from Scratch with Babel and Webpack](https://medium.com/@dahvinchee/how-to-set-up-a-react-typescript-project-from-scratch-with-babel-and-webpack-6b069881229d)

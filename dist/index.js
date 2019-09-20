@@ -1,1 +1,23 @@
-!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.Orbit=t():e.Orbit=t()}(window,function(){return function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){"use strict";n.r(t),t.default='import TestComponent from "./TestComponent/TestComponent";\nimport Label from "./Label/Label";\n/**\n * TODO: 동적임포트로 스플리팅하려고 했는데 최적화가 자동으로 세팅되며 서드파티 공통번들을 따로빼는데\n * 클라이언트에서 못읽는 문제가 있음, 멀티엔트리포인트로 ..\n */\n// var TestComponent = import(/* webpackChunkName: "TestComponent" */"./TestComponent/TestComponent");\n// var TestComponent2= import(/* webpackChunkName: "TestComponent2" */"./TestComponent2/TestComponent2");\n// var Label= import(/* webpackChunkName: "Label" */"./Label/Label");\n\nexport { TestComponent, Label };'}])});
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "TestComponent", {
+  enumerable: true,
+  get: function get() {
+    return _TestComponent["default"];
+  }
+});
+Object.defineProperty(exports, "Label", {
+  enumerable: true,
+  get: function get() {
+    return _Label["default"];
+  }
+});
+
+var _TestComponent = _interopRequireDefault(require("./TestComponent/TestComponent"));
+
+var _Label = _interopRequireDefault(require("./Label/Label"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
