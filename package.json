@@ -13,8 +13,8 @@
   },
   "scripts": {
     "prepare": "npm run build",
-    "build": "npm run clean:build && babel ./src/components --ignore *.spec.js --out-dir ./dist",
-    "build:babel": "npm run clean:build && babel ./src/components --ignore *.spec.js --out-dir ./dist",
+    "build": "npm run clean:build && babel ./src/components --ignore *.spec.js --out-dir ./dist --extensions '.ts,.tsx,.js,.jsx'",
+    "build:babel": "npm run clean:build && babel ./src/components --ignore *.spec.js --out-dir ./dist --extensions '.ts,.tsx,.js,.jsx'",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean:build": "rimraf dist"
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/plugin-transform-runtime": "^7.6.0",
     "@babel/polyfill": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
