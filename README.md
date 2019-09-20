@@ -94,3 +94,7 @@ bable-polyfill은 dependency와 devDependency중 어디에 위치해야할까
 리액트 타입스크립트 웹팩 바벨
 
 [How to Set Up a React TypeScript Project from Scratch with Babel and Webpack](https://medium.com/@dahvinchee/how-to-set-up-a-react-typescript-project-from-scratch-with-babel-and-webpack-6b069881229d)
+
+타입스크립트 바벨 설정
+
+[TypeScript With Babel: A Beautiful Marriage](https://iamturns.com/typescript-babel/)
